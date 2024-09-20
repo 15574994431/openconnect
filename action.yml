@@ -1,25 +1,28 @@
-# action.yml
-name: 'Forticlient VPN'
-description: 'Connect to Forticlient VPN using OpenConnect'
-inputs:
-  VPN_USER:
-    description: 'vpn user'
-    required: true
-  VPN_PWD:
-    description: 'vpn password'
-    required: true
-  VPN_HOST:
-    description: 'vpn host'
-    required: true
-  VPN_PORT:
-    description: 'vpn port'
-    required: true
-  VPN_SERVER_CERT:
-    description: 'vpn server certificate'
-    required: true
-outputs:
-  time:
-    description: 'The time we greeted you'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
+#动作.yml
+名称：'Forticlient VPN'
+描述：'使用 OpenConnect 连接到 Forticlient VPN'
+输入：
+  VPN用户：
+    描述：'vpn 用户'
+    必填：true
+  VPN_密码：
+    描述：'vpn 密码'
+    必填：true
+  VPN主机：
+    描述：'vpn 主机'
+    必填：true
+  VPN端口：
+    描述：'vpn 端口'
+    必填：true
+  VPN服务器证书：
+    描述：'VPN 证书服务器'
+    必填：true
+显示：
+  时间：
+    描述：“我们迎接您的时光”
+运行：
+  使用：'docker'
+  图片：'Dockerfile'
+              -名称： Forticlient VPN
+                用途： horellana/openconnect@v1.0.1
+            
